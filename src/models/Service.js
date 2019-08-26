@@ -10,10 +10,7 @@ const types = {
 	type: String,
   technician: User,
 	author: User,
-	date: {
-    type: Date,
-    default: Date.now
-  },
+	date: Date,
 	observation: String
 }
 
