@@ -1,14 +1,24 @@
 const { Schema, model } = require('mongoose')
 
-const fiberleftoverTypes = {
+const User = {
+  id: String,
   name: String
 }
 
-const schemaOptions = {
+const types = {
+  type: String,
+  technician: String,
+  date: Date,
+  qtd: String,
+  observation: String,
+	author: User
+}
+
+const options = {
   timestamps: true
 }
 
-const fiberleftoverSchema = new Schema(fiberleftoverTypes, schemaOptions)
+const fiberleftoverSchema = new Schema(types, options)
 
 const Fiberleftover = model('Fiberleftover', fiberleftoverSchema)
 

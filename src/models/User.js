@@ -1,17 +1,31 @@
 const { Schema, model } = require('mongoose')
 
-const userTypes = {
-  name: String,
-  permissions: [
-    String // [ 'all', 'users', 'boxes', 'devices', 'services', 'vehicles', 'timesheet', 'equipaments', 'installations', 'fiberleftovers', 'ordersofservice', 'sendMail', 'report', 'desktop', 'mobile' ]
-  ]
+// [ 'all', 'users', 'boxes', 'devices', 'services', 'vehicles', 'timesheet', 'equipaments',
+// 'installations', 'fiberleftovers', 'ordersofservice', 'sendMail', 'report', 'desktop', 'mobile' ]
+
+const Timesheet = {
+  date: Date,
+  start: Date,
+  break: Date,
+  back: Date,
+  end: Date
 }
 
-const schemaOptions = {
+const types = {
+  name: String,
+  username: String,
+  passworld: String,
+  phone: String,
+  permissions: [String],
+  suspended: Boolean,
+  timesheets: [Timesheet]
+}
+
+const options = {
   timestamps: true
 }
 
-const userSchema = new Schema(userTypes, schemaOptions)
+const userSchema = new Schema(types, options)
 
 const User = model('User', userSchema)
 

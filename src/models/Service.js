@@ -1,14 +1,27 @@
 const { Schema, model } = require('mongoose')
 
-const serviceTypes = {
+const User = {
+  id: String,
   name: String
 }
 
-const schemaOptions = {
+const types = {
+  client: String,
+	type: String,
+  technician: User,
+	author: User,
+	date: {
+    type: Date,
+    default: Date.now
+  },
+	observation: String
+}
+
+const options = {
   timestamps: true
 }
 
-const serviceSchema = new Schema(serviceTypes, schemaOptions)
+const serviceSchema = new Schema(types, options)
 
 const Service = model('Service', serviceSchema)
 

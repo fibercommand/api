@@ -1,7 +1,10 @@
 const { Schema, model } = require('mongoose')
 
 const deviceTypes = {
-  name: String
+  name: String,
+  host: String,
+	status: Boolean,
+	group: String
 }
 
 const schemaOptions = {
