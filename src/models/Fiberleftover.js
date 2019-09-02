@@ -9,7 +9,7 @@ const types = {
   type: String,
   technician: String,
   date: Date,
-  qtd: String,
+  qtd: Number,
   observation: String,
 	author: User
 }

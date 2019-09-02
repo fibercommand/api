@@ -5,10 +5,10 @@ const User = {
   name: String
 }
 
-const Document = {
+const Document = new Schema({
   photo: String,
   type: String
-}
+})
 
 const Dbi = {
   photo: String,
