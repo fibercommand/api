@@ -8,13 +8,19 @@
 
     yarn start
 
+## Features
+
+- 👥 Team
+- 🚘 Fleet
+- 📡 Network
+- 📦 Equipaments
+- 📄 Services
+
 ## Mind map
 
 ![map](map.png)
 
----
-
-## Team
+## 👥 Team
 
 ### User
 |Método|Endpoint|Função|Descrição|
@@ -27,9 +33,7 @@
 |PUT|/users/suspend/:id|suspend|Suspender usuário|
 |PUT|/users/active/:id|active|Ativar usuário|
 
----
-
-## Vehicle fleet
+## 🚘 Fleet
 
 ### Vehicle
 |Método|Endpoint|Função|Descrição|
@@ -40,9 +44,7 @@
 |PUT|/vehicles/:id|edit|Editar veículo|
 |DELETE|/vehicles/:id|remove|Remover veículo|
 
----
-
-## Network
+## 📡 Network
 
 ### Device
 |Método|Endpoint|Função|Descrição|
@@ -55,8 +57,6 @@
 |PUT|/devices/up/:id|up|Ativar dispositivo|
 |PUT|/devices/down/:id|down|Desativar dispositivo|
 
----
-
 ### Box
 |Método|Endpoint|Função|Descrição|
 |---|---|---|---|
@@ -68,9 +68,7 @@
 |PUT|/boxes/approve/:id|approve|Aprovar caixa|
 |PUT|/boxes/disapprove/:id|disapprove|Desaprovar caixa|
 
----
-
-## Equipaments
+## 📦 Equipaments
 
 ### Equipament
 |Método|Endpoint|Função|Descrição|
@@ -81,8 +79,6 @@
 |PUT|/equipaments/:id|edit|Editar equipamento|
 |DELETE|/equipaments/:id|remove|Remover equipamento|
 
----
-
 ### Stock
 |Método|Endpoint|Função|Descrição|
 |---|---|---|---|
@@ -91,8 +87,6 @@
 |GET|/stock/:id|findOne|Buscar um registro no estoque|
 |PUT|/stock/:id|edit|Editar registro no estoque|
 |DELETE|/stock/:id|remove|Remover registro no estoque|
-
----
 
 ### Leftover
 |Método|Endpoint|Função|Descrição|
@@ -103,9 +97,7 @@
 |PUT|/leftover/:id|edit|Editar sobra|
 |DELETE|/leftover/:id|remove|Remover sobra|
 
----
-
-## Services
+## 📄 Services
 
 ### Service
 |Método|Endpoint|Função|Descrição|
@@ -116,8 +108,6 @@
 |PUT|/services/:id|edit|Editar serviço|
 |DELETE|/services/:id|remove|Remover serviço|
 
----
-
 ### Order
 |Método|Endpoint|Função|Descrição|
 |---|---|---|---|
@@ -126,8 +116,6 @@
 |GET|/orders/:id|findOne|Buscar uma ordem|
 |PUT|/orders/:id|edit|Editar ordem|
 |DELETE|/orders/:id|remove|Remover ordem|
-
----
 
 ### Installation
 |Método|Endpoint|Função|Descrição|
