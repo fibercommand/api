@@ -8,6 +8,9 @@
 
     yarn start
 
+## API map
+
+![map](map.png)
 
 ## API endpoints
 
