@@ -1,5 +1,5 @@
 # Fiber Command
-## API RESTful
+## Steps to run
 
     yarn install
     yarn dev
@@ -8,11 +8,11 @@
 
     yarn start
 
-## API map
+## Mind map
 
 ![map](map.png)
 
-## API endpoints
+## Endpoints
 
 ### Box
 |Método|Endpoint|Função|Descrição|
@@ -22,6 +22,8 @@
 |GET|/boxes/:id|findOne|Buscar um caixa|
 |PUT|/boxes/:id|edit|Editar caixa|
 |DELETE|/boxes/:id|remove|Remover caixa|
+|PUT|/boxes/approve/:id|approve|Aprovar caixa|
+|PUT|/boxes/disapprove/:id|disapprove|Desaprovar caixa|
 
 ---
 
@@ -33,6 +35,8 @@
 |GET|/devices/:id|findOne|Buscar um dispositivo|
 |PUT|/devices/:id|edit|Editar dispositivo|
 |DELETE|/devices/:id|remove|Remover dispositivo|
+|PUT|/devices/up/:id|up|Ativar dispositivo|
+|PUT|/devices/down/:id|down|Desativar dispositivo|
 
 ---
 
